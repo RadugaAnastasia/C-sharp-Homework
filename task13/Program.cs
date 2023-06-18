@@ -4,7 +4,7 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 Console.WriteLine("Введите число: ");
-int number = int.Parse (Console.ReadLine()!);
+int number = Math.Abs(Convert.ToInt32(Console.ReadLine()!)); // функция, которая берет число по модулю
 int number1 = number;
 int result = -1;
 if(number >= 100)
