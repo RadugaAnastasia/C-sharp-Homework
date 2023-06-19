@@ -11,15 +11,16 @@ int Prompt(string message)
     return number;
 }
 
-int ReverseNumber(int n)
+int ReverseNumber(int num)
 {
-    int k = 0;
-    while (n > 0)
+    int n = num; //сохраняет заданное целое число
+    int k = 0; // хранит перевернутое число
+    while (n>0)
     {
-        k = 10*n + n % 10;
-        n /= 10; //n = n / 10
+        k = 10*k + n % 10; 
+        n /= 10; //n = n / 10 - удаляем последнюю цифру из n
     }
-    return k;
+    return (k);
 }
 
 int N = Prompt("Введите пятизначное число: ");
